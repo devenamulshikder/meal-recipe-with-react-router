@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom"
 const Navbar = () => {
 
   return (
-    <div className="flex items-center justify-between mt-8">
+    <div className="flex items-center justify-between mt-8 bg-slate-300 p-10 rounded-2xl">
         <div>
             <h2 className="text-3xl font-bold">Meal Details And Category</h2>
         </div>

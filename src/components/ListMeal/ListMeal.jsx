@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-undef */
 import { useLoaderData } from "react-router-dom"
-import RandomMeal from "../RandomMeal/RandomMeal";
+import ListMeals from "../ListMeals/ListMeals";
 
 
 const ListMeal = () => {
@@ -10,10 +10,9 @@ const ListMeal = () => {
 
   return (
     <div>
-      <h3>Meal list: {items.categories.length}</h3>
       <div className="grid grid-cols-3 gap-5">
         {items.categories.map((item, index) => (
-          <RandomMeal key={index} item={item}></RandomMeal>
+          <ListMeals key={index} item={item}></ListMeals>
         ))}
       </div>
     </div>
