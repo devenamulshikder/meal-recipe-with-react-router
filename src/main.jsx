@@ -4,8 +4,8 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Navbar/Home/Home";
 import ListMeal from "./components/ListMeal/ListMeal";
-import RandomMeal from "./components/ListMeals/ListMeals";
 import MoreMeals from "./components/MoreMeals/MoreMeals";
+import RandomMeal from "./components/RandomMeal/RandomMeal";
 
 const router = createBrowserRouter([
   {
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
         path: "/random_meal",
         loader: () =>
           fetch("https://www.themealdb.com/api/json/v1/1/random.php"),
-        element: <RandomMeal></RandomMeal>,
+        element: <RandomMeal></RandomMeal>
       },
       {
         path: "/more_meals",

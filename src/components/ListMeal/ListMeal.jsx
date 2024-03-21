@@ -6,7 +6,7 @@ import ListMeals from "../ListMeals/ListMeals";
 const ListMeal = () => {
 
     const items = useLoaderData();
-    console.log(items);
+    // console.log(items);
 
   return (
     <div>
