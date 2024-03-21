@@ -22,10 +22,12 @@ const router = createBrowserRouter([
         path: "/random_meal",
         loader: () =>
           fetch("https://www.themealdb.com/api/json/v1/1/random.php"),
-        element: <RandomMeal></RandomMeal>
+        element: <RandomMeal></RandomMeal>,
       },
       {
         path: "/more_meals",
+        loader: () =>
+          fetch("https://www.themealdb.com/api/json/v1/1/search.php?f=b"),
         element: <MoreMeals></MoreMeals>,
       },
     ],
